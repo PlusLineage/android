@@ -35,4 +35,7 @@
   <project path="hardware/qcom-caf/sm8250/media" name="PixelPlusUI-Devices/alioth_hardware_qcom-caf_sm8250_media" remote="gh" revision="snowcone"/>
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="gh" revision="lineage-19.1"/>
 
+  <!--Extras -->
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
+
 </manifest>
