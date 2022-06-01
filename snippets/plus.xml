@@ -36,4 +36,7 @@
   <project path="vendor/gms" name="EvoX/vendor_gapps" remote="gitlab" revision="snow" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="plus" />
 
+  <!--Extras -->
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
+
 </manifest>
