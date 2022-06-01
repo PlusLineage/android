@@ -1,0 +1,35 @@
+<manifest>
+<!--Lineage+ -->
+  <remote  name="plus"
+           fetch="https://github.com/PlusLineage"
+           revision="plus" />
+
+  <!-- Github -->
+  <remote name="gh"
+           fetch="https://github.com/" />
+
+  <!-- GitLab -->
+  <remote name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <!-- Removed projects -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_Updater" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+
+  <!-- Our forks -->
+  <project path="frameworks/base" name="frameworks_base" remote="plus" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="plus" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="plus" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="plus" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="plus" />
+  <project path="system/core" name="system_core" remote="plus" />
+  <project path="lineage-sdk" name="lineage-sdk" remote="plus" />
+
+</manifest>
