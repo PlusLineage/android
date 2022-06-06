@@ -1,36 +1,48 @@
-LineageOS
+LineagePlus
 ===========
 
-Getting started
----------------
+LineagePlus is a rom based on LineageOS with some optimizations and features for provide a light and performance rom without unnecesary features and personalizations.
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+Credits
+-------
+* [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
+* [**AOSPExtended**](https://github.com/AospExtended)
+* [**PixelOS**](https://github.com/PixelOS-Pixelish)
+* [**BlissRoms**](https://github.com/BlissRoms)
+* [**PixelPlusUI**](https://github.com/PixelPlusUI-SnowCone)
+* [**ForkLineageOS**](https://github.com/ForkLineageOS)
+* [**PixelExperience**](https://github.com/PixelExperience)
+* [**ProtonAOSP**](https://github.com/ProtonAOSP)
+* [**CodeAurora Forum**](https://source.codeaurora.org/quic/la/)
+
+How to Build?
+-------------
+
+To get started with LineagePlus, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+
+To initialize your local repository using the Lineage+ trees, use a 
+command like this:
+
+```bash
+repo init -u https://github.com/PlusLineage/android.git -b plus
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
+To initialize a shallow clone, which will save even more space & time, use a command like this:
+
+```bash
+repo init --depth=1 -u https://github.com/PlusLineage/android.git -b plus
 ```
 Then to sync up:
+----------------
+
+```bash
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-repo sync
+Finally to build:
+-----------------
+```bash
+lunch_lineage_device-userdebug
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
-
-
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
-
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
-
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
---------
-
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+```bash
+brunch device
+```
