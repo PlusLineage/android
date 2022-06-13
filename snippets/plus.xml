@@ -49,4 +49,5 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
+  <project path="vendor/gms" name="EvoX/vendor_gapps" remote="gitlab" revision="snow" />
 </manifest>
