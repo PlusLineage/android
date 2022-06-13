@@ -34,4 +34,6 @@
 
   <!--Extras -->
   <project path="vendor/gms" name="EvoX/vendor_gapps" remote="gitlab" revision="snow" />
+  <project path="vendor/lawnchair" name="vendor_lawnchair" remote="plus" />
+
 </manifest>
