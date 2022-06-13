@@ -6,6 +6,10 @@
            fetch="https://github.com/PlusLineage"
            revision="plus" />
 
+  <!-- Github -->
+  <remote name="gh"
+           fetch="https://github.com/" />
+
   <!-- GitLab -->
   <remote name="gitlab"
            fetch="https://gitlab.com" />
@@ -15,11 +19,20 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <remove-project name="LineageOS/android_packages_apps_Updater" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
 
   <!-- Our forks -->
   <project path="frameworks/base" name="frameworks_base" remote="plus" />
   <project path="vendor/lineage" name="vendor_lineage" remote="plus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="plus" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="plus" />
+
+  <!--Hardware -->
+  <project path="hardware/qcom-caf/sm8250/audio" name="PixelPlusUI-Devices/alioth_hardware_qcom-caf_sm8250_audio" remote="gh" revision="snowcone"/>
+  <project path="hardware/qcom-caf/sm8250/display" name="PixelPlusUI-Devices/alioth_hardware_qcom-caf_sm8250_display" remote="gh" revision="snowcone"/>
+  <project path="hardware/qcom-caf/sm8250/media" name="PixelPlusUI-Devices/alioth_hardware_qcom-caf_sm8250_media" remote="gh" revision="snowcone"/>
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="gh" revision="lineage-19.1"/>
 
 </manifest>
