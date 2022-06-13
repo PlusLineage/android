@@ -32,4 +32,6 @@
   <project path="system/core" name="system_core" remote="plus" />
   <project path="lineage-sdk" name="lineage-sdk" remote="plus" />
 
+  <!--Extras -->
+  <project path="vendor/gms" name="EvoX/vendor_gapps" remote="gitlab" revision="snow" />
 </manifest>
