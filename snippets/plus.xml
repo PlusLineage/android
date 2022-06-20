@@ -37,6 +37,7 @@
 
   <!-- Our forks -->
   <project path="frameworks/base" name="frameworks_base" remote="plus" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="plus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="plus" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="plus" />
   <project path="vendor/lineage" name="vendor_lineage" remote="plus" />
