@@ -23,22 +23,32 @@
           review="gerrit.pixelexperience.org" />
 
   <!-- Removed projects -->
+  <remove-project name="LineageOS/android_device_lineage_sepolicy" />
   <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <remove-project name="LineageOS/android_packages_apps_LineageParts" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_packages_apps_Updater" />
   <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_packages_overlays_Lineage" />
   <remove-project name="LineageOS/android_system_core" />
-  <remove-project name="LineageOS/android_lineage-sdk" />
 
   <!-- Our forks -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="plus" />
   <project path="frameworks/base" name="frameworks_base" remote="plus" />
+  <project path="lineage-sdk" name="lineage-sdk" remote="plus" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="plus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="plus" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="plus" />
-  <project path="vendor/lineage" name="vendor_lineage" remote="plus" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="plus" />
+  <project path="packages/overlays/Lineage" name=" packages_overlays_Lineage" remote="plus" />
+  <project path="packages/overlays/Plus" name=" packages_overlays_Plus" remote="plus" />
   <project path="system/core" name="system_core" remote="plus" />
-  <project path="lineage-sdk" name="lineage-sdk" remote="plus" />
+  <project path="vendor/addons" name="addons" remote="plus" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="plus" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="plus" />
+
+
 
   <!--Extras -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
